@@ -1,15 +1,16 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Lalit",
+  lastName: "Badgujar",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Product Developer",
+  avatar: "/images/avatar.jpg", // Replace with your avatar image path
+  location: "Pune, Maharashtra",
+  timeZone: "Asia/Kolkata",
+  languages: ["English"], // Add more languages if needed
 };
 
 const newsletter = {
@@ -73,7 +74,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -81,110 +82,105 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hi, I'm Lalit Badgujar, a dynamic Product Developer at Belaben Technologies. I specialize in
+        scalable database design, performance optimization, and building feature-rich applications.
       </>
     ),
+  }, 
+  certifications: {
+    display: true,
+    title: "Certifications",
+    items: [
+      {
+        name: "Git for DevOps and Version Control",
+        date: "Mar 2023",
+      },
+      {
+        name: "AWS Academy Graduate (Cloud Foundations)",
+        date: "Jun 2022",
+      },
+    ],
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
+    label: "Work",
     title: "Work Experience",
+    description: `Professional journey of ${person.name}`,
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Belaben Technologies",
+        timeframe: "Jul 2023 - Present",
+        role: "Product Developer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Designed scalable MySQL database structures for complex business needs.</>,
+          <>Optimized performance, security, and reliability through efficient tuning.</>,
+          <>Developed feature-rich applications with cross-functional collaboration.</>,
+          <>Implemented task management and project handling in the real estate domain.</>,
+          <>Managed Git repositories and ensured smooth version control.</>,
+          <>Debugged and enhanced user functionalities based on feedback.</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
+    ],
+    
+  },
+  technical: {
+    display: true,
+    title: "Technical Skills",
+    skills: [
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
+        title: "Backend Development",
+        description: <>PHP, Laravel</>,
+      },
+      {
+        title: "Database Management",
+        description: <>MySQL, MariaDB, Database Optimization, Query Performance Tuning</>,
+      },
+      {
+        title: "Front-end Development",
+        description: <>AngularJS, Blade Templates</>,
+      },
+      {
+        title: "Version Control",
+        description: <>Git, GitHub, GitLab</>,
+      },
+      {
+        title: "Web Technologies",
+        description: <>HTML, CSS, JavaScript</>,
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "M.Sc. Computer Science",
+        description: <>Modern College of Arts, Science & Commerce, 2023 (GPA: 74%)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "B.Sc. Computer Science",
+        description: <>Modern College of Arts, Science & Commerce, 2021 (GPA: 74%)</>,
+      },
+      {
+        name: "HSC",
+        description: <>Maharashtra State Board, 2016 (GPA: 58%)</>,
+      },
+      {
+        name: "SSC",
+        description: <>Maharashtra State Board, 2016 (GPA: 78%)</>,
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+ 
 };
 
 const blog = {
@@ -197,86 +193,31 @@ const blog = {
 
 const work = {
   label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  title: "My Projects",
+  description: `Design and development projects by ${person.name}`,
+  items: [
+    {
+      name: "WhatsApp Clone",
+      description: (
+        <>
+          Developed a fully functional WhatsApp clone using Java for Android. Implemented real-time
+          messaging, user authentication, and media sharing. Focused on UI/UX for a smooth and
+          intuitive user experience.
+        </>
+      ),
+    },
+  ],
 };
+ 
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
+  title: "My Photo Gallery",
   description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
+      src: "/images/gallery/img-01.jpg", // Replace with your project or personal images
+      alt: "WhatsApp Clone Screenshot",
       orientation: "horizontal",
     },
   ],
