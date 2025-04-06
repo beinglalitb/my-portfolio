@@ -7,14 +7,14 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Product Developer",
-  avatar: "/images/avatar.jpg", // Replace with your avatar image path
+  avatar: "/images/my-avatar.jpg", // Replace with your avatar image path
   location: "Pune, Maharashtra",
   timeZone: "Asia/Kolkata",
   languages: ["English"], // Add more languages if needed
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/beinglalitb",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/lalit-badgujar-235b95184/",
   },
   {
     name: "X",
@@ -45,7 +45,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "lalitbadgujarofficial@gmail.com",
   },
 ];
 

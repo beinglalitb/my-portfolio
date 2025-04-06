@@ -1,45 +1,46 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "Building WhatsApp Clone on Android and Web"
+publishedAt: ""
+summary: "Development of a real-time messaging platform inspired by WhatsApp, built across Android (Java) and Web (MERN stack) platforms, focusing on smooth UI/UX and efficient communication."
 images:
   - "/images/projects/project-01/cover-01.jpg"
   - "/images/projects/project-01/cover-02.jpg"
   - "/images/projects/project-01/cover-03.jpg"
   - "/images/projects/project-01/cover-04.jpg"
 team:
-  - name: "Selene Yu"
+  - name: "Lalit Badgujar"
+    role: "Product Developer"
+    avatar: "/images/my-avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/lalit-badgujar-235b95184/"
+  - name: "Ishan Dorge"
     role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Jane Smith"
-    role: "Product Manager"
-    avatar: "/images/projects/project-01/avatar-01.png"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+    avatar: ""
+    linkedIn: ""
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Developed a fully functional cross-platform WhatsApp clone — one for Android using Java, and another for the Web using the MERN stack — focusing on real-time communication, user authentication, and clean, responsive UI.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Real-Time Messaging**: Integrated Socket.IO for instant messaging on the web, and Firebase Realtime Database on Android to enable live chat capabilities.
+- **User Authentication**: Implemented secure login and signup features using Firebase Authentication on Android and JWT with MongoDB for the web version.
+- **Media Sharing**: Enabled users to share images and files seamlessly in both versions, stored using Firebase Storage and MongoDB GridFS.
+- **Responsive UI/UX**: Designed intuitive and familiar chat interfaces, ensuring consistency and ease-of-use across devices.
+- **Syncing and Persistence**: Ensured messages and media were stored persistently with proper syncing mechanisms across sessions and platforms.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Android (Java)**: For building a native mobile experience.
+- **Firebase**: For real-time database, authentication, and cloud storage in the Android version.
+- **MERN Stack**: MongoDB, Express, React, Node.js to build the WhatsApp Web clone.
+- **Socket.IO**: For enabling real-time, bi-directional communication between clients and server.
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+The biggest challenge was maintaining real-time sync and seamless media handling across both platforms. Android required a deep integration with Firebase for real-time updates, while the web version needed robust back-end architecture using Node.js and MongoDB. Handling media uploads efficiently, along with implementing responsive chat UI, enhanced the learning in full-stack development and real-time communication.
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+The Android and Web WhatsApp clones are fully operational and showcase real-time features, media sharing, and user authentication. These projects reflect strong proficiency in both mobile and web development stacks, with a focus on performance, user experience, and scalable architecture.
